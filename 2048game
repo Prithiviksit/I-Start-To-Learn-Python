@@ -1,4 +1,4 @@
-```python
+
 import random
 n=int(input("the scale of your matric:"))
 end=int(input("your goal:"))
@@ -123,6 +123,6 @@ while max!=end:
 if end==max:
     print("你赢了")
     waiting=input("you win")
-```
+
 
 
