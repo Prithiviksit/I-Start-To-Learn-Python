@@ -1,0 +1,26 @@
+def cost(x,y):
+    if x+y>8:
+        return 110*(x+y-8)
+    else:
+        return 0
+
+
+zmax=0
+amax=0
+bmax=0
+for a in range(1200):
+    for b in range(1200):
+        a=a/100.0
+        b=b/100.0
+        if a+b>12:
+            break
+        elif 5/8*a+1.25*b>12:
+            break
+        else:
+            if 600*a+640*b-cost(a,b)-cost(5/8*a,1.25*b)>zmax:
+                zmax=600*a+640*b-cost(a,b)-cost(5/8*a,1.25*b)
+                amax=a
+                bmax=b
+
+print(zmax,amax,bmax)
+t=input('okay')
