@@ -1,3 +1,4 @@
+'''python
 def cost(x,y):
     if x+y>8:
         return 110*(x+y-8)
@@ -24,3 +25,4 @@ for a in range(1200):
 
 print(zmax,amax,bmax)
 t=input('okay')
+'''
